@@ -1,0 +1,25 @@
+.footer {
+  background-color: #e7e7e7;
+  padding: 2em 0;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  padding: 1em 0;
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: .8em;
+  color: #919191;
+  text-decoration: none;
+  padding: 0 1em;
+  transition: color .5s;
+
+  &:hover {
+    color: #333;
+  }
+}
