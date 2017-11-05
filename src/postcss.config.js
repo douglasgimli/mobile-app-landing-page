@@ -8,9 +8,7 @@ const postCSSEach = require('postcss-each')
 const postCSSVariables = require('postcss-css-variables')
 const postCSSAtRulesVariables = require('postcss-at-rules-variables')
 const postCSSCustomMedia = require('postcss-custom-media')
-const postCSSColorFunc = require('postcss-color-function')
 const postCSSEasyImport = require('postcss-easy-import')
-const postCSSLost = require('lost')
 
 module.exports = {
     plugins: [
@@ -22,7 +20,5 @@ module.exports = {
         postCSSEach(),
         postCSSCustomMedia(),
         postCSSAutoprefixer({ browsers: ['IE 9', 'iOS 7'] }),
-        postCSSColorFunc(),
-        postCSSLost(),
     ],
 }

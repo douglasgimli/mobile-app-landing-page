@@ -7,6 +7,11 @@ module.exports = {
     app: "./javascript/app",
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery",
+    }),
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: true,
       compress: {
