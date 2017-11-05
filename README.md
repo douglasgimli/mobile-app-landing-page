@@ -2,6 +2,14 @@
 
 This is a simple mobile app landing page
 
+## Live version
+
+There's a live version of the project running at [http://douglasdasilva.com.br/mobile-app-landing-page](http://link)
+
+## Screenshots
+
+You can check some pages screenshots at `./screenshots` folder.
+
 ## Installation
 
 ```
