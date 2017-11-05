@@ -7,4 +7,7 @@
   --breakpoint-sm: 48em;
   --breakpoint-md: 64em;
   --breakpoint-lg: 75em;
+
+  /* Colors */
+  --main-text-color: #848484;
 }
