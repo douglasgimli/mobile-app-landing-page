@@ -1,0 +1,10 @@
+@each $size, $label in (var(--containers-sizes)), (var(--containers-labels)) {
+  .container-$(label) {
+    max-width: $(size);
+  }
+}
+
+.container {
+  padding: var(--containers-padding);
+  margin: 0 auto;
+}
