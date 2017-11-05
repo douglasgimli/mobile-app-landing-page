@@ -5,6 +5,9 @@
 }
 
 .container {
-  padding: var(--containers-padding);
   margin: 0 auto;
+}
+
+.section {
+  padding: var(--containers-padding);
 }
