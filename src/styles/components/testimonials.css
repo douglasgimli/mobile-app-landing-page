@@ -5,6 +5,7 @@
 
 .testimonials__holder {
   width: 300vw;
+  transition: transform .5s;
 
   &:after {
     content: "";
@@ -21,6 +22,7 @@
   line-height: 1.4em;
   color: #848484;
   text-align: center;
+  padding: 0 2em;
 }
 
 .testimonials__author {
@@ -50,7 +52,7 @@
   border: 2px solid #3498db;
   transition: background-color .5s;
 
-  &:hover {
+  &:hover, &.testimonials__bullet--current {
     background-color: #3498db;
   }
 
