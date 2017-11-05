@@ -1,8 +1,6 @@
 const SLIDER_INTERVAL = 4000
 
 export const init = () => {
-  console.log('[.] Slider init')
-
   const slider = $('[js-slider]')
   slider.each((key, element) => initializeSlider($(element)))
 }
@@ -32,6 +30,7 @@ const initializeSlider = ($slider) => {
     // Set initial slider position
     gotoSlider($slider, 0)
 
+    // Rotate slider based in current state (paused or not)
     const sliderTimer = setInterval(() => {
       const sliderPaused = $slider.attr('js-slider-paused')
       if (!sliderPaused) {
@@ -55,6 +54,7 @@ const onBulletClick = (event, $slider) => {
 const gotoSlider = ($slider, key) => {
   $slider.attr('js-slider-current', key)
   
+  // Set bullet as active
   const bulletsHolder = $slider.find('[js-slider-bullets]')
   if (bulletsHolder.length === 1) {
     bulletsHolder
@@ -64,6 +64,7 @@ const gotoSlider = ($slider, key) => {
       .addClass('testimonials__bullet--current')
   }
   
+  // Scroll slider to current position
   const holder = $slider.find('[js-slider-holder]')
   const sliderPosition = key * 100
   holder.css({ 'transform': 'translateX(-' + sliderPosition + 'vw)' })
