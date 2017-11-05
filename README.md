@@ -4,7 +4,7 @@ This is a simple mobile app landing page
 
 ## Live version
 
-There's a live version of the project running at [http://douglasdasilva.com.br/mobile-app-landing-page](http://link)
+There's a live version of the project running at [http://douglasdasilva.com.br/mobile-app-landing-page](http://douglasdasilva.com.br/mobile-app-landing-page)
 
 ## Screenshots
 
