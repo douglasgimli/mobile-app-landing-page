@@ -12,6 +12,7 @@
   padding-bottom: 95%;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .header__content {
@@ -69,6 +70,10 @@
     max-width: 45%;
     padding: var(--containers-padding);
     margin-top: -80px;
+    /* Horizontal align with position absolute for IE 10-11 */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
