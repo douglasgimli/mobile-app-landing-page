@@ -94,13 +94,13 @@
 /* Desktop */
 @mixin min-media var(--breakpoint-md) {
   .pricing {
-    margin-bottom: 5.5em;
+    margin-bottom: 7em;
   }
   
   .pricing__grid {
     flex-flow: row nowrap;
     align-items: center;
-    margin-bottom: -5.5em;
+    margin-bottom: -7em;
   }
   
   .pricing__column {
