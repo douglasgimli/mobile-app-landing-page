@@ -2,7 +2,7 @@
   /* Grid settings */
   --containers-sizes: 75em, 64em, 45em, 34em;
   --containers-labels: xl, lg, md, sm;
-  --containers-padding: 2em;
+  --containers-padding: 2.5em;
 
   --breakpoint-sm: 48em;
   --breakpoint-md: 64em;

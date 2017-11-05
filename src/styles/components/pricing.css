@@ -10,7 +10,7 @@
 .pricing__column {
   width: 100%;
   margin-right: 0;
-  margin-bottom: .3em;
+  margin-bottom: 1em;
 }
 
 .pricing__table-line {
@@ -79,8 +79,14 @@
 
 /* Tablet */
 @mixin min-media var(--breakpoint-sm) {
+  .pricing__grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
   .pricing__column {
-    width: 49.3%;
+    width: 55%;
     margin-right: .3em;
   }
 }

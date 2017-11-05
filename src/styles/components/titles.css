@@ -23,3 +23,13 @@
 .description--center {
   text-align: center;
 }
+
+.description__list {
+  padding: 0 0 0 1.5em;
+  margin-top: 1.5em;
+
+  li {
+    list-style-image: url('../images/about/bullet.png');
+    padding: .3em 0;
+  }
+}
