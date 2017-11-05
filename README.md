@@ -17,3 +17,5 @@ cd ./src
 yarn -i (or npm install)
 yarn dev (or npm run dev)
 ```
+
+Check it running at [http://0.0.0.0:3000/](http://0.0.0.0:3000/)
