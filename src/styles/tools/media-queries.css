@@ -1,0 +1,21 @@
+/*
+* Media queries
+*/
+
+@define-mixin min-media $break {
+  @media screen and (min-width: $break) {
+    @mixin-content;
+  }
+}
+
+@define-mixin max-media $break {
+  @media screen and (max-width: $break) {
+    @mixin-content;
+  }
+}
+
+@define-mixin min-max-media $break-min, $break-max {
+  @media screen and (min-width: $break-min) and (max-width: $break-max) {
+    @mixin-content;
+  }
+}

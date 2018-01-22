@@ -1,0 +1,38 @@
+.footer {
+  background-color: #e7e7e7;
+  padding: 1em 0;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1em 0;
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: .8em;
+  color: #919191;
+  text-decoration: none;
+  padding: 1em 1em;
+  transition: color .5s;
+  width: 100%;
+
+  &:hover {
+    color: #333;
+  }
+}
+
+/* Tablet */
+@mixin min-media var(--breakpoint-sm) {
+  .footer__links {
+    flex-wrap: nowrap;
+  }
+  
+  .footer__link {
+    width: auto;
+  }
+}

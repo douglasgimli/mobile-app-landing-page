@@ -1,0 +1,49 @@
+.about {
+  background-color: #e7e7e7;
+}
+
+.about__grid {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.about__column {
+  width: 100%%;
+  padding: 1em;
+  align-items: start;
+}
+
+.about__video {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: white;
+  min-height: 43vw;
+}
+
+/* Tablet */
+@mixin min-media var(--breakpoint-sm) {
+  .about__video {
+    min-height: 46vw;
+  }
+  
+  .about__column {
+    padding: 2em;
+  }
+}
+
+/* Desktop */
+@mixin min-media var(--breakpoint-md) {
+  .about__grid {
+    flex-direction: row;
+  }
+
+  .about__column {
+    width: 50%;
+  }
+
+  .about__video {
+    min-height: 18vw;
+  }
+}
